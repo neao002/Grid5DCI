@@ -1,0 +1,148 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html {
+    font-size: 62.5%;
+}
+
+/* code here */
+
+body {
+    background-color: lightgray;
+}
+
+header {
+
+    width: 95%;
+    height: 20vh;
+    background-color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 7vh;
+    margin: 15px;
+    
+
+}
+
+.main-container {
+   
+    width: 95%;
+    height: 90vh;
+    background-color: white;
+    
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "card1 card1 card1 card1 card2 card2"
+                        "card1 card1 card1 card1 card4 card4"
+                        "card3 card3 card3 card3 card4 card4"
+                        "card3 card3 card3 card3 card6 card6";
+    margin: 10px 15px;
+    padding: 0;                     
+
+
+}
+
+.card1 {
+
+    grid-area: card1;
+    width: 90%;
+    justify-items: center;
+    margin-top: 20px;
+    
+    
+    
+
+}
+
+.card2 {
+    grid-area: card3;
+    width: 90%;
+    
+}
+
+.card3 {
+    
+    grid-area: card2;
+    width: 100%;
+    height: 20vh;
+    padding: 50px;
+    border-left: 10px solid lightgray;
+    border-bottom: 10px solid lightgray;
+
+    
+    
+
+
+
+}
+
+.card4 {
+    
+    grid-area: card4;
+    width: 100%;
+    justify-items: center;
+    margin-top: 20px;
+    border-left: 10px solid lightgray;
+    border-bottom: 10px solid lightgray;
+    border-top: 10px solid lightgray;
+    padding: 10px;
+    
+
+
+
+}
+
+.card4 img {
+    
+    grid-area: card4;
+    width: 50%;
+    justify-items: center;
+    margin: 0 auto;
+    
+
+
+
+}
+
+h3 {
+
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+
+}
+
+.card5 {
+
+
+    grid-area: card6;
+    width: 100%;
+    font-size: 1.2rem;
+    
+    border-left: 10px solid lightgray;
+    border-bottom: 10px solid lightgray;
+    border-top: 10px solid lightgray;
+}
+
+
+footer {
+
+    width: 95%;
+    height: 30vh;
+    display: grid;
+    background-color: lightgray;
+    border: 20px solid white;
+    margin: 14px;
+}
+
+footer h2 {
+
+    text-align: center;
+    padding: 80px;
+    font-size: 2rem;
+    
+    
+}
